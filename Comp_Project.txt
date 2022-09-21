@@ -1,0 +1,277 @@
+  		 			import java.util.*;
+ 		 			class Computer_Project
+   	   			 { static String cat, type, date, name, speci, add; static long mob; static double amt, elec;
+    	 			static Scanner sc= new Scanner(System.in);
+ 		 			static void entry()
+       			{   System.out.println("__________________________________________________________________________________________  ");
+         			System.out.println("                                                                                            ");
+         			System.out.println("       dP   dP   dP  88888888b  dP         a88888b.   .88888.   8888ba.88ba   88888888b     ");
+         			System.out.println("       88   88   88  88         88        d8'   `88  d8'   `8b  88  `8b  `8b  88            ");
+         			System.out.println("       88  .8P  .8P  a88aaaa    88        88         88     88  88   88   88  a88aaaa       ");
+         			System.out.println("       88  d8'  d8'  88         88        88         88     88  88   88   88  88            ");
+         			System.out.println("       8.d8P8.d8P    88         88        Y8.   .88  Y8.   .8P  88   88   88  88            ");
+         			System.out.println("       8888' Y88'    88888888P  88888888P  Y88888P'   `8888P'   dP   dP   dP  88888888P     ");
+         			System.out.println("                                                                                            ");           
+         			System.out.println("                                    d888888P  .88888.									    "); 
+         			System.out.println("                                       88    d8'   `8b                    					");
+         			System.out.println("                                       88    88     88										");
+         			System.out.println("                                       88    88     88										");
+         			System.out.println("                                       88    Y8.   .8P										"); 
+         			System.out.println("                                       dP     `8888P'										");
+         			System.out.println("                                                                                            ");          
+         			System.out.println("                 88888888b                d8888888P  .88888.   888888ba   88888888b		    ");
+         			System.out.println("                 88                            .d8' d8'   `8b  88    `8b  88				");
+         			System.out.println("                 88aaaa                      .d8'   88     88  88     88  88aaaa			");
+         			System.out.println("                 88           88888888     .d8'     88     88  88     88  88				"); 
+         			System.out.println("                 88                       d8'       Y8.   .8P  88     88  88				");
+         			System.out.println("                 88888888P                Y8888888P  `8888P'   dP     dP  88888888P		    ");
+         			System.out.println("																							");
+         			System.out.println("___________________________________________________________________________________________ ");          
+         			System.out.println("                                                                                            ");   
+       			}
+         			static void input()
+      			{
+         			System.out.println("Enter Your Name:");
+         			name = sc.nextLine(); 
+     	 			System.out.println();             
+     	 			System.out.println("Enter Your Address:");
+    	 			add = sc.nextLine();
+    	 			System.out.println();              
+    	 			System.out.println("Enter Your Mob. No:");
+     	 			mob = sc.nextLong();
+     	 			System.out.println();                   
+     	 			System.out.println("Enter Date:");
+     	 			date=sc.next();
+     	 			System.out.println("___________________________________________________________________________________________");
+     	 			System.out.println();         
+ 	   			}
+ 		 			static void compute()
+ 	   			{
+       				System.out.println("********************");
+       				System.out.println(" 1. ABOUT US  ");
+        			System.out.println(" 2. SHOPPING  ");
+       				System.out.println("********************");                    
+       				System.out.println();               
+       				System.out.print("Enter Your Choice: ");
+       				int c = sc.nextInt();
+       				System.out.println("____________________________________________________________________________________________ ");
+       				System.out.println();
+       				if(c==1)
+       			{ 
+         			System.out.println(" Thanks for opting ABOUT US ");
+         			System.out.println("==========================================================================================");        
+         			System.out.println("For Inquiry visit our site www.ezoneinfo.com");
+         			System.out.println("__________________________________________________________________________________________");         
+        			}
+        			else
+        			{ 
+         			System.out.println(" Thanks for opting SHOPPING ");            
+         			System.out.println(" Let's start SHOPPING!! :)  ");
+         			System.out.println("========================================================================================== ");         
+         			System.out.println("*******************");
+         			System.out.println(" 1.Dekstop");
+         			System.out.println(" 2.Laptop ");
+         			System.out.println("*******************");          
+         			System.out.println();  
+         			System.out.print("Enter your desired preference: ");         
+       			}
+       				int choice = sc.nextInt();
+       				System.out.println("____________________________________________________________________________________________ ");
+       				System.out.println();  
+     
+        			switch(choice)
+      			{
+          			case 1: System.out.println("          .----.               ");
+                  			System.out.println("       .---------. | == |      ");
+                  			System.out.println("       |.-_____-.| |----|      ");
+                  			System.out.println("       ||       || | == |      "); 
+                  			System.out.println("       ||       || |----|      ");  
+                  			System.out.println("       |'-.....-'| |::::|      "); 
+                  			System.out.println("       `--)---(--` |___.|      ");
+                  			System.out.println("      /:::::::::::\\'  _ '     ");
+                  			System.out.println("     /:::=======:::\\`\\`\\    "); 
+                  			System.out.println("     `_____________`    '-'    ");
+                  			System.out.println();
+                  			System.out.println("   Thanks for opting Dekstop   ");
+                  			System.out.println("=============================================================");
+				  			System.out.println(); 
+                  			System.out.println(" Two categories of Dekstop are mentioned below:");
+                  			System.out.println();                    
+                  			System.out.println("__________________________________________________________________________________ "); 
+                  			System.out.println(" Brand: Apple iMac \n Processor: Dual Core Intel Core i5  \n Colour: Silver ");
+                  			System.out.println(" Operatng System: Mac OS Sierra \n 1 Year Warranty \n Power Features: AC 100-240 V, 50/60 Hz ");
+                  			System.out.println(" Screen: 21.5 inch LED Display \n Resolution: 1920 x 1080 pixels \n Amount: Rs. 54900  ");
+                  			System.out.println(" USB Inputs: 4 \n RAM: 8GB");                    
+                  			System.out.println("___________________________________________________________________________________ "); 
+                  			System.out.println(" Brand: Samsung \n Processor: Intel Core i7  \n Colour: Black \n USB Inputs: 2");
+                  			System.out.println(" Operatng System: Windows 7 \n 3 Year Warranty \n Memory Speed: 1333MHz \n RAM: 8GB");
+                  			System.out.println(" Screen: 22 inch LCD Display \n Resolution: 1600 x 1200 pixels \n Amount: Rs. 48000 ");
+                  			System.out.println();                    
+                  			System.out.println("__________________________________________________________________________________ "); 
+                  			System.out.println("A. Apple  B. Samsung ");
+                 			System.out.print("Select Your Brand: ");
+                  			type="Dekstop";
+                  			char ch = sc.next().charAt(0);
+                  			System.out.println("___________________________________________________________________________________ ");                                     
+                  			switch (ch)
+                 		  { case 'A':cat="Apple iMac"; amt= 54900.0;
+                           			System.out.println("Thanks for choosing Apple"); 
+                           			System.out.println("__________________________________________________________________________");
+                           			break;
+                  			case 'B':cat="Samsung"; amt= 48000.0;
+                           			System.out.println("Thanks for choosing Samsung");
+                           			System.out.println("__________________________________________________________________________ ");                           
+                           			break;
+                  			default:System.out.println("You have Entered Wrong Choice:");
+                		  }
+                  			break;
+          			case 2: System.out.println("     ______________           ");
+                  			System.out.println("    ||            ||          ");
+                  			System.out.println("    ||            ||          ");
+                  			System.out.println("    ||   LAPTOP   ||          ");
+                  			System.out.println("    ||            ||          ");
+                  			System.out.println("    ||____________||          ");
+                  			System.out.println("    |______________|          ");
+                  			System.out.println("    \\############\\          ");
+                  			System.out.println("     \\############\\         ");
+                  			System.out.println("      \\     ____   \\        ");  
+                  			System.out.println("       \\____\\__\\__\\       ");
+                  			System.out.println();                  
+                  			System.out.println("   Thanks for opting Laptop   ");
+                  			System.out.println("============================================================");
+                  			System.out.println(" Two categories of Laptop are mentioned below:");
+                 			System.out.println();
+                  			System.out.println("_________________________________________________________________________________"); 
+                  			System.out.println("Brand: Asus Vivobook Max \n Processor: Intel CoreTM i3 (7th Gen)  \n Colour: Black ");
+                  			System.out.println("Operatng System: Windows 10 \n Warranty Limited To Manufacturing Defects ");
+                  			System.out.println("Screen: 15.6 inch LED Display \n Resolution: 1920 x 1080 pixels         ");
+                  			System.out.println("Processor Speed: 2.4GHz \n RAM: 4GB \n  USB Input: 1 \n Amount: Rs. 35900");
+				  	System.out.println();                    
+                  			System.out.println("__________________________________________________________________________________ "); 
+                  			System.out.println("Brand: Lenevo IdeaPad \n Processor: Dual Core Intel Core i3 \n Colour: Grey  ");
+                  			System.out.println("Operatng System: Windows 10 \n 1 Year Warranty \n Memory Speed: 2400 MHz \n RAM: 6GB");
+                  			System.out.println("Screen: 15.6 inch IPS Display \n Resolution: 1920 x 1080 pixels \n Amount: Rs. 40500  ");
+                  			System.out.println("USB Inputs: 3");
+				  	System.out.println();                    
+                  			System.out.println("___________________________________________________________________ ");
+                  			System.out.println(" C.Asus  D.Lenovo ");                  
+                  			System.out.print("Select Your Brand: ");
+                  			type="Laptop";                  
+                  			char ch1 = sc.next().charAt(0);
+                  			System.out.println("___________________________________________________________________ ");                  
+                  			switch (ch1)
+                			{ case 'C':cat="Asus Vivobook Max"; amt = 35900.0;
+                           			System.out.println("Thanks for choosing Asus");
+                           			System.out.println("__________________________________________________________ ");                           
+                           			break;
+                  			case 'D':cat="Lenevo IdeaPad"; amt = 40500.0;
+                           			System.out.println("Thanks for choosing Lenovo");
+                           			System.out.println("__________________________________________________________ ");                           
+                           			break;
+                 		 	default:System.out.println("You have Entered Wrong Choice:");
+ 							}
+                           			break;
+          		  			default: System.out.println("You have Entered Wrong Choice:");
+ 							}
+ 							}
+ 				  			static void specification()
+ 			    			{
+    				System.out.println(" 1. HEADPHONE   Rs.3430 \n 2. PENDRIVE 64GB     Rs.725");
+    				System.out.println(" 3. E-SCAN ANTI-VIRUS 2 years   Rs.320 \n 4. Speaker    Rs.600");    
+    				System.out.println(" 5. Graphic Card    Rs.3250 \n 6. Webcam     Rs.750 \n 7. If Done/Not Needed");
+    				System.out.println("__________________________________________________________________________________ ");
+    				System.out.println();
+    				System.out.print(" Enter your specifications if any: ");
+    				speci="";
+    				for(int i=1;i>0;i++)
+      			{	int num = sc.nextInt();
+       				if (num==1)
+      			{
+        			elec = elec+3430.0;
+        			speci = speci+"\n > HEADPHONE";
+      			}
+       				else if (num==2)
+      			{
+        			elec = elec+725.0;
+        			speci = speci+"\n > PENDRIVE 62 GB";
+      			}
+       				else if (num==3)
+      			{
+        			elec = elec+320.0;
+        			speci = speci+"\n > E-SCAN ANTI-VIRUS 2 years";
+      			}
+       				else if (num==4)
+      			{
+        			elec = elec+600.0;
+        			speci = speci+"\n > Speaker ";
+      			}
+       				else if (num==5)
+      			{
+        			elec = elec+3250.0;
+        			speci = speci+"\n > Graphic Card";
+      			}
+       				else if (num==6)
+      			{
+        			elec = elec+750.0;
+        			speci = speci+"\n > Webcam";
+      			}
+       				else if (num==7)
+        			break;
+       				else 
+       			    System.out.println("Invalid Entry");
+      			}
+      			}
+        			static void display()
+      			{
+        			System.out.println("__________________________________________________________________________________________ ");
+         			System.out.println("																		");          
+         			System.out.println("                     888888ba   dP  dP         dP						"); 
+         			System.out.println("                     88    `8b  88  88         88						");
+         			System.out.println("                     88aaaa8P'  88  88         88						");    
+        			System.out.println("                     88   `8b.  88  88         88						");
+         			System.out.println("                     88    .88  88  88         88						"); 
+         			System.out.println("                     88888888P  dP  88888888P  88888888P				");
+         			System.out.println("                                                                                   		   ");
+         			System.out.println("                                                                                   		   ");
+         			System.out.println(" Shop No. 7&8, Soc. B/6,Shanti Nagar Sector No.6, Mira Road(E), Dist. Thane 401107         ");          
+         			System.out.println("__________________________________________________________________________________________ ");          
+         			System.out.println(" To:"+" "+ name +"     "+"Add:"+" "+ add +"     "+"Phone No:"+" "+ mob             		 	);                                                                        
+         			System.out.println("                                                                                   		   ");          
+         			System.out.println(" Bill No. 2930                                  Date:" +" "+ date				 			);          
+         			System.out.println("========================================================================================== "); 
+         			System.out.println(" TYPE: "+type+"                                                                    		   ");
+         			System.out.println(" BRAND: "+ cat + "  "+"                 AMOUNT: Rs."+" "+amt        						);          
+         			System.out.println(" PARTICULARS: "+ speci									 									); 
+         			System.out.println("                                           SPECIFICATION AMOUNT: "+"Rs."+ elec              );
+         			System.out.println("                                           GST [18%]: "+"Rs."+ 0.18*(amt+elec)              );          
+         			System.out.println(" TOTAL AMOUNT: "+"Rs."+ (amt+elec+(0.18*(amt+elec)))                                		);          
+         			System.out.println("========================================================================================== ");
+         			System.out.println();      
+         			System.out.println("     dP     dP  dP  .d88888b   dP  d888888P        .d888888   .88888.    .d888888  dP  888888ba        ");
+         			System.out.println("     88     88  88  88.    ''  88     88          d8'    88  d8'   `88  d8'    88  88  88    `8b	   "); 
+         			System.out.println("     88    .8P  88  `Y88888b.  88     88          88aaaaa88  88         88aaaaa88  88  88     88       "); 
+         			System.out.println("     88    d8'  88        `8b  88     88          88     88  88   YP88  88     88  88  88     88	   ");
+         			System.out.println("     88  .d8P   88  d8'   .8P  88     88          88     88  Y8.   .88  88     88  88  88     88	   ");
+         			System.out.println("     888888'    dP   Y88888P   dP     dP          88     88   `88888'   88     88  dP  dP     dP	   ");
+        		    System.out.println("                                                                                                       ");
+         			System.out.println("                                       .-''''''-.                                                      ");
+         			System.out.println("                                     .'          '.                                                    ");
+         			System.out.println("                                    /   O      O   /                                                   ");
+         			System.out.println("                                   :                :                                                  ");    
+         			System.out.println("                                   |                |                                                  ");
+         			System.out.println("                                   : ',          ,' :                                                  ");
+         			System.out.println("                                    /  '-......-'  /                                                   ");
+         			System.out.println("                                     '.          .'                                                    ");
+         			System.out.println("                                       '-......-'                                                      ");
+         			System.out.println("                                                                                                       ");
+         			System.out.println("______________________________________________________________________________________________________ ");
+	   			 }
+		 			public static void main(String args[])
+       			 {
+         			entry();
+         			input();
+         			compute();
+         			specification();
+         			display();
+       			 }
+	   			 }
