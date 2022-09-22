@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-mongoose.connect("mongodb://127.0.0.1:27017/Task-2");
 import express from 'express';
 const app = express();
 
+mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");
 const postSchema = new mongoose.Schema({
 
     char_id: {
@@ -40,13 +40,20 @@ const postSchema = new mongoose.Schema({
     },
 
 })
-const Post = mongoose.model('Web_Series', postSchema);
+
+const Post = mongoose.model('web_series', postSchema);
 
 app.use(express.json());
-app.post('/Display', async (req, res) => {
-    let data = new Web_Series(req.body);
+app.post('/create', async (req, res) => {
+    let data = new Post(req.body);
     let result = await data.save();
     res.send(result);
+
+});
+
+app.get('/detail', async (req, res) => {
+    let data = await Post.find();
+    res.send(data);
 
 });
 app.listen(5000);
