@@ -4,16 +4,16 @@ const app = express();
 import mongoose from 'mongoose';
 import { MongoClient } from 'mongodb';
 const url = 'mongodb://localhost:27017';
-const databaseName = 'Task-2';
+const dbName = 'Uni-Task';
 const client = new MongoClient(url);
 
 async function dbConnect() {
     let result = await client.connect();
-    let db = result.db(databaseName);
+    let db = result.db(dbName);
     return db.collection('web_series');
 }
 
-mongoose.connect("mongodb://127.0.0.1:27017/Task-2");
+mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");
 const postSchema = new mongoose.Schema({
 
     char_id: {
@@ -52,7 +52,7 @@ const postSchema = new mongoose.Schema({
 
 })
 
-const Post = mongoose.model('Web_Series', postSchema);
+const Post = mongoose.model('web_series', postSchema);
 
 async function getData() {
     const myData = await fetch("https://www.breakingbadapi.com/api/characters");
