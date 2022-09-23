@@ -31,7 +31,7 @@ for (var i = 0; i < m; i++) {
 }
 let t1, t2;
 for (let i = 0; i < m; i++) {
-    for (let j = 0; j < m; j++) {        //sorting and arranging words & resp count in decreasing order of their repetation
+    for (let j = 0; j < m; j++) {        //sorting and arranging words & respective count in decreasing order of their repetation
         if (count[j] < count[j + 1]) {
             t1 = count[j + 1];
             count[j + 1] = count[j];
