@@ -84,4 +84,9 @@ app.get('/', async (req, res) => {
     res.send(data);
 
 });
+app.get('/bcsa', async (req, res) => {
+    let data = await dbConnect();
+    data = await data.find({category:'Better Call Saul'}).toArray();
+    res.send(data);
+});
 app.listen(5000);
