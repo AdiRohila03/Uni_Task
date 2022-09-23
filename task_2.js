@@ -78,7 +78,7 @@ async function getData() {
 getData();
 
 
-app.get('/', async (req, res) => {
+app.get('/detail', async (req, res) => {
     let data = await dbConnect();
     data = await data.find().toArray();
     res.send(data);
