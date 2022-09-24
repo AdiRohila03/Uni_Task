@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import express from 'express';
 const app = express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");
+mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");     // Connects Database
 const postSchema = new mongoose.Schema({
 
     char_id: {
@@ -45,7 +45,7 @@ const Post = mongoose.model('web_series', postSchema);
 
 app.use(express.json());
 
-app.delete('/kill/:char_id', async (req, res) => {
+app.delete('/kill/:char_id', async (req, res) => {          //Allows to delete a paricular data from DB using char_id  
     {
         let data = await Post.deleteOne(req.params);
         res.send(data);
@@ -53,11 +53,11 @@ app.delete('/kill/:char_id', async (req, res) => {
 
 });
 
-app.put('/update/:char_id', async (req, res) => {
+app.put('/update/:char_id', async (req, res) => {          //Allows to update/change the data from DB
     let data = await Post.updateOne(
-        req.params,          //Condition for update
+        req.params,                                       //Condition for update
         {
-            $set:req.body     //Updated Value
+            $set:req.body                                 //Updated Value
 
         }
 
