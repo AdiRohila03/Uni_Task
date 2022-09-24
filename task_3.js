@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import express from 'express';
 const app = express();
 
-mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");
+mongoose.connect("mongodb://127.0.0.1:27017/Uni-Task");         // Connects Database
 const postSchema = new mongoose.Schema({
 
     char_id: {
@@ -43,16 +43,16 @@ const postSchema = new mongoose.Schema({
 
 const Post = mongoose.model('web_series', postSchema);
 
-app.use(express.json());
-app.post('/create', async (req, res) => {
+app.use(express.json());                    // Converts the received data into json format
+app.post('/create', async (req, res) => {   //Allows to add the data to DB
     let data = new Post(req.body);
     let result = await data.save();
     res.send(result);
 
 });
 
-app.get('/detail', async (req, res) => {
-    let data = await Post.find();
+app.get('/detail', async (req, res) => {      //Displays the updated data from DB
+    let data = await Post.find(); 
     res.send(data);
 
 });
